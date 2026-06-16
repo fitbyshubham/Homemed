@@ -1,0 +1,6 @@
+{
+  "name": "HomeMed Recovery",
+  "description": "Post-discharge recovery clinical infrastructure and remote patient monitoring platform designed to reduce readmissions and standardize home care.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
