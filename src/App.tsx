@@ -84,7 +84,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#faf8f5] font-sans antialiased text-slate-800 selection:bg-brand-teal/20 selection:text-brand-teal font-light">
+    <div className="min-h-screen w-full overflow-x-hidden relative bg-[#faf8f5] font-sans antialiased text-slate-800 selection:bg-brand-teal/20 selection:text-brand-teal font-light">
       
       {/* Brand Header */}
       <Header

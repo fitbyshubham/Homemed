@@ -98,7 +98,7 @@ export default function RemotePatientMonitoring() {
   const waveDuration = heartRate > 90 ? '0.8s' : heartRate > 80 ? '1.2s' : '1.5S';
 
   return (
-    <section id="rpm-protocol" className="relative py-20 sm:py-28 bg-[#061324] text-white grid-bg-overlay border-b border-slate-900">
+    <section id="rpm-protocol" className="relative py-20 sm:py-28 bg-[#061324] text-white grid-bg-overlay border-b border-slate-900 overflow-hidden">
       {/* Background decorations */}
       <div className="absolute top-1/2 right-[10%] w-72 h-72 rounded-full bg-brand-teal/5 blur-[120px] pointer-events-none"></div>
 

@@ -56,7 +56,7 @@ export default function Architecture({ onOpenReferralModal, onScrollTo }: Archit
       badge: 'REHABILITATION COHORT',
       badgeColor: 'text-indigo-600 bg-indigo-50 border-indigo-500/15',
       bulletColor: 'bg-indigo-600',
-      logo: '/assets/restore.jpeg',
+      logo: '',
       text: 'HomeMed OS sits beneath every program — coordinating care teams, RPM data, recovery goals, family visibility and clinical escalation across every patient journey.',
       starText: 'Structured movement metrics like knee extension degrees and walking counts synced back to hospitals under medical oversight.',
       image: '/assets/restore.jpeg',
@@ -65,7 +65,7 @@ export default function Architecture({ onOpenReferralModal, onScrollTo }: Archit
   ];
 
   return (
-    <section id="architecture" className="relative py-20 sm:py-28 bg-[#faf8f5] text-slate-800 border-b border-slate-205/60 select-none">
+    <section id="architecture" className="relative py-20 sm:py-28 bg-[#faf8f5] text-slate-800 border-b border-slate-205/60 overflow-hidden select-none">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}

@@ -83,7 +83,7 @@ export default function FooterCTA({ referrals, onAddReferral, openReferralModal,
   }, [referrals, searchQuery, programFilter]);
 
   return (
-    <footer id="contact" className="relative bg-[#061324] text-white py-16 sm:py-24 grid-bg-overlay border-t border-slate-800">
+    <footer id="contact" className="relative bg-[#061324] text-white py-16 sm:py-24 grid-bg-overlay border-t border-slate-800 overflow-hidden">
       
       {/* Light glow highlights */}
       <div className="absolute bottom-0 left-[20%] w-[500px] h-[500px] rounded-full bg-brand-teal/5 blur-[150px] pointer-events-none"></div>
