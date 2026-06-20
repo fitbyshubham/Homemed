@@ -140,7 +140,7 @@ export default function FooterCTA({ referrals, onAddReferral, openReferralModal,
             <div className="bg-slate-900/65 border border-slate-800 rounded-3xl p-6 sm:p-8 space-y-6">
               
               <h3 className="font-serif text-xl font-bold tracking-tight text-white mb-2">
-                Direct Care Sync Lines
+                Get in touch:
               </h3>
 
               <div className="space-y-6">
@@ -151,7 +151,7 @@ export default function FooterCTA({ referrals, onAddReferral, openReferralModal,
                     <Mail className="w-5.5 h-5.5" />
                   </div>
                   <div>
-                    <span className="text-[10px] font-mono text-slate-500 block font-bold tracking-wider">CLINICAL REFERRALS & CARE SYNC</span>
+                    <span className="text-[10px] font-mono text-slate-500 block font-bold tracking-wider">Intake Coordinator</span>
                     <a href="mailto:care@homemed.in" className="text-sm font-semibold text-slate-100 hover:text-brand-teal transition-colors">
                       care@homemed.in
                     </a>
@@ -165,11 +165,11 @@ export default function FooterCTA({ referrals, onAddReferral, openReferralModal,
                     <Phone className="w-5.5 h-5.5" />
                   </div>
                   <div>
-                    <span className="text-[10px] font-mono text-slate-500 block font-bold tracking-wider">PHONE / SECURE WHATSAPP</span>
-                    <a href="tel:+919820051185" className="text-sm font-semibold text-slate-100 hover:text-brand-teal transition-colors font-mono">
-                      +91 98200 51185
+                    <span className="text-[10px] font-mono text-slate-500 block font-bold tracking-wider">Admissions/Emergency Hotline:</span>
+                    <a href="tel:+919363515998" className="text-sm font-semibold text-slate-100 hover:text-brand-teal transition-colors font-mono">
+                      +91 93635 15998
                     </a>
-                    <p className="text-[11px] text-slate-400 mt-1">Instant messaging intake desks</p>
+                    
                   </div>
                 </div>
 
@@ -179,11 +179,11 @@ export default function FooterCTA({ referrals, onAddReferral, openReferralModal,
                     <Building2 className="w-5.5 h-5.5" />
                   </div>
                   <div>
-                    <span className="text-[10px] font-mono text-slate-500 block font-bold tracking-wider">HOSPITAL PARTNERSHIPS</span>
-                    <a href="mailto:partnerships@homemed.in" className="text-sm font-semibold text-slate-100 hover:text-brand-teal transition-colors">
-                      partnerships@homemed.in
+                    <span className="text-[10px] font-mono text-slate-500 block font-bold tracking-wider">Careers & Partnerships</span>
+                    <a href="mailto:careers@homemed.in" className="text-sm font-semibold text-slate-100 hover:text-brand-teal transition-colors">
+                      careers@homemed.in
                     </a>
-                    <p className="text-[11px] text-slate-400 mt-1">Integration agreements & department onboarding</p>
+                  
                   </div>
                 </div>
 
@@ -226,10 +226,11 @@ export default function FooterCTA({ referrals, onAddReferral, openReferralModal,
                         <span>SECURE HOME-CARE REGISTRATION</span>
                       </div>
                       <h3 className="font-serif text-xl font-bold tracking-tight text-white leading-snug">
-                        Request Home Care Support
+                        Request Home Care:
                       </h3>
                       <p className="text-xs text-slate-400 leading-relaxed font-sans font-light mt-1">
-                        Register for premium post-discharge nursing or rehabilitation. Completed entries instantly appear in the live care queue.
+                       Fill in your details to get started instantly (Patient Name, Age, Contact, Program Choice,
+Diagnosis, Acuity Level).
                       </p>
                     </div>
 

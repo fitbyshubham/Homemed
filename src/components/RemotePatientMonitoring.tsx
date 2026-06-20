@@ -113,10 +113,11 @@ export default function RemotePatientMonitoring() {
             </span>
           </div>
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-100 leading-tight tracking-tight">
-            Continuous clinical signal between visits.
+           We watch your vitals even while you sleep.
           </h2>
           <p className="mt-4 text-slate-150 text-slate-200 text-lg sm:text-xl leading-relaxed font-sans font-normal">
-            The critical hazard isn’t when a nurse is sitting beside the bed. The risk is the silent physiological deterioration that happens between physical visits. HomeMed OS bridges this by streaming high-acuity telemetry.
+            The most critical moments are between nurse visits. HomeMed bridges that gap with 24/7
+monitoring.
           </p>
         </div>
 
@@ -129,33 +130,35 @@ export default function RemotePatientMonitoring() {
             <div className="bg-[#09182a] border border-slate-800 rounded-3xl p-6 sm:p-8 space-y-6">
               <div className="flex items-center space-x-3 text-brand-gold text-xs font-mono font-bold tracking-widest uppercase">
                 <AlertTriangle className="w-5 h-5 text-brand-gold" />
-                <span>THE 2 AM HORRIFIC GAP</span>
+                <span>Why it matters</span>
               </div>
 
               <h3 className="font-serif text-xl font-bold text-white tracking-tight leading-snug">
-                Why live signal matters: The 2:00 AM Scenario
+                 The 2:00 AM Example:
               </h3>
 
               <div className="space-y-4">
                 <p className="text-[14px] sm:text-[15.5px] text-slate-200 leading-relaxed font-sans font-normal">
-                  During sleep, a post-surgical cardiovascular patient experiencing pulmonary congestion has their oxygen saturation level drop silently below <span className="font-bold text-white underline underline-offset-4 decoration-rose-500">90%</span>.
+                   <span className="font-bold text-white underline underline-offset-4 decoration-rose-500">Imagine a patient’s oxygen drops during sleep.</span>
                 </p>
 
                 <div className="border border-brand-gold/25 bg-brand-gold/10 rounded-xl p-4 space-y-1.5 hover:border-brand-gold/45 transition-all duration-300">
                   <span className="text-[11px] sm:text-xs font-mono text-brand-gold font-black uppercase tracking-wider block">
-                    Traditional Home Care
+                    Without HomeMed
                   </span>
                   <p className="text-xs sm:text-sm text-slate-100 font-sans font-normal leading-relaxed">
-                    Detected first at <span className="text-white font-semibold">08:00 AM</span> during routine morning check (if done). Six hours of deep hypoxia, requiring emergency ambulance and direct ICU readmission.
+                    <span className="text-white font-semibold">The family finds out at 8:00 AM. Six hours of low oxygen leads to a rushed
+ICU readmission.</span> 
                   </p>
                 </div>
 
                 <div className="border border-brand-teal/25 bg-brand-teal/10 rounded-xl p-4 space-y-1.5 hover:border-brand-teal/45 transition-all duration-300">
                   <span className="text-[11px] sm:text-xs font-mono text-brand-teal font-black uppercase tracking-wider block">
-                    HomeMed OS Stream
+                    With HomeMed 
                   </span>
                   <p className="text-xs sm:text-sm text-slate-100 font-sans font-normal leading-relaxed">
-                    Ingested instantly at <span className="text-white font-semibold">2:17 AM</span>. Escalated to on-call surgeon, oxygen protocol commenced in under 15 minutes. Patient recovers safely in their bed.
+                    <span className="text-white font-semibold">The sensor alerts our team at 2:17 AM. A doctor starts oxygen support within 15
+minutes. The patient recovers safely at home.</span>.
                   </p>
                 </div>
               </div>
@@ -165,10 +168,10 @@ export default function RemotePatientMonitoring() {
             <div className="bg-[#09182a] p-5.5 rounded-2xl border border-slate-800/80 flex flex-col justify-center">
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
                 {[
-                  { id: '1', title: 'Vitals Ingest', desc: 'Sensor Stream' },
-                  { id: '2', title: 'HMOS Triage', desc: 'Rule Engine' },
-                  { id: '3', title: 'Alert Escalated', desc: 'Nurse Paged' },
-                  { id: '4', title: 'Clinical Care', desc: 'Action Complete' }
+                  { id: '1', title: 'Vitals Ingest', desc: 'Sensors read data.' },
+                  { id: '2', title: 'HMOS Triage', desc: 'Rules engine checks for risks.' },
+                  { id: '3', title: 'Alert Escalated', desc: 'Nurse is paged.' },
+                  { id: '4', title: 'Clinical Care', desc: 'Action is taken.' }
                 ].map((s, idx) => (
                   <div key={idx} className="space-y-1 bg-slate-950/80 p-2.5 rounded-lg border border-slate-850 hover:border-slate-700 transition-colors">
                     <span className="text-[9px] font-mono text-brand-teal font-extrabold block">STAGE {s.id}</span>
@@ -193,14 +196,14 @@ export default function RemotePatientMonitoring() {
                   </div>
                   <div>
                     <h3 className="text-sm font-bold tracking-tight text-white flex items-center space-x-2">
-                      <span>Post-Discharge Live Simulator</span>
+                      <span> Live Simulator</span>
                       {isPlaying && (
                         <span className="inline-flex items-center px-1.5 py-0.5 rounded text-[8px] font-mono font-black bg-rose-500/10 text-rose-400 border border-rose-500/20 uppercase tracking-widest animate-pulse">
                           STREAMING LIVE
                         </span>
                       )}
                     </h3>
-                    <p className="text-[11px] text-slate-400 font-mono">HMOS Escalate Protocol (Ver: 4.2)</p>
+                    <p className="text-[11px] text-slate-400 font-mono">Watch how our system works in real-time:</p>
                   </div>
                 </div>
 

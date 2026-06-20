@@ -31,35 +31,56 @@ export default function Architecture({ onOpenReferralModal, onScrollTo }: Archit
   const programs = [
     {
       name: 'OPTIMA',
-      badge: 'ICU STEP-DOWN COHORT',
+      title: 'Program 1: OPTIMA (ICU Step-down)',
+      badge: 'ICU STEP-DOWN',
+      for: 'Patients leaving the ICU.',
+      whatWeDo: 'Continuous oxygen and vitals monitoring with medical support on standby',
+      includes: [
+        'High-dependency nursing',
+        'ICU setups',
+        'Structured emergency plans'
+      ],
       badgeColor: 'text-[#a17c24] bg-[#fef9ec] border-amber-500/15',
       bulletColor: 'bg-[#a17c24]',
       logo: '',
-      text: 'HomeMed OS sits beneath every program — coordinating care teams, RPM data, recovery goals, family visibility and clinical escalation across every patient journey.',
       starText: 'Continuous oxygen ingestion automatically alerts team of respiratory shifts, deploying emergency in-home nurse dispatch SLA.',
-      image: '/assets/optima.jpeg',
+      image: '/assets/optima.jpg',
       action: () => onOpenReferralModal?.('OPTIMA')
     },
     {
       name: 'LIVYA',
-      badge: 'POST-SURGICAL COHORT',
-      badgeColor: 'text-[#0c706d] bg-[#e6f4f1] border-emerald-500/15',
-      bulletColor: 'bg-[#0c706d]',
+      title: 'Program 2: LIVYA (Post-Surgical or patients needing home care)',
+      badge: 'POST-SURGICAL / HOME CARE',
+      for: 'Patients recovering from surgery or needing equivalent care at home',
+      whatWeDo: 'Daily wound checks, pain tracking, and physiotherapy exercises, medical adherence with complete visibility to your primary doctor.',
+      includes: [
+        'Post-op planning',
+        'Medication management',
+        'Mobility goals'
+      ],
+      badgeColor: 'text-[#159d9a] bg-[#e6f4f1] border-brand-teal/15',
+      bulletColor: 'bg-[#159d9a]',
       logo: '',
-      text: 'HomeMed OS sits beneath every program — coordinating care teams, RPM data, recovery goals, family visibility and clinical escalation across every patient journey.',
       starText: 'Wound healing checks, pain log trends, and daily physiotherapy mobility checklists integrated back to surgeons.',
-      image: '/assets/livya.jpeg',
+      image: '/assets/livya.jpg',
       action: () => onOpenReferralModal?.('LIVYA')
     },
     {
       name: 'RESTORE',
-      badge: 'REHABILITATION COHORT',
+      title: 'Program 3: RESTORE (Rehabilitation)',
+      badge: 'REHABILITATION',
+      for: 'Patients needing long-term rehab (stroke, neuro, ortho).',
+      whatWeDo: 'Measures movement metrics (like knee bends and steps) and syncs them with the hospital.',
+      includes: [
+        'Strength rebuilding',
+        'Balance training',
+        'Support for independent living'
+      ],
       badgeColor: 'text-indigo-600 bg-indigo-50 border-indigo-500/15',
       bulletColor: 'bg-indigo-600',
       logo: '',
-      text: 'HomeMed OS sits beneath every program — coordinating care teams, RPM data, recovery goals, family visibility and clinical escalation across every patient journey.',
       starText: 'Structured movement metrics like knee extension degrees and walking counts synced back to hospitals under medical oversight.',
-      image: '/assets/restore.jpeg',
+      image: '/assets/restore.jpg',
       action: () => onOpenReferralModal?.('RESTORE')
     }
   ];
@@ -73,14 +94,14 @@ export default function Architecture({ onOpenReferralModal, onScrollTo }: Archit
           <div className="inline-flex items-center space-x-2 bg-slate-200/80 border border-slate-300 rounded-full px-3.5 py-1.5 mb-2.5">
             <span className="w-1.5 h-1.5 rounded-full bg-brand-teal"></span>
             <span className="text-[10px] sm:text-xs font-mono font-bold tracking-widest text-slate-650 uppercase">
-              THE HOMEMED ARCHITECTURE
+              Our Clinical Programs
             </span>
           </div>
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#061324] leading-tight tracking-tight">
-            One operating system. <span className="text-brand-teal italic font-extrabold">Three clinical programs.</span>
+            One operating system. <span className="text-brand-teal italic font-extrabold">Three specialized recovery paths.</span>
           </h2>
-          <p className="mt-4 text-slate-705 text-slate-700 text-lg sm:text-xl leading-relaxed font-sans font-normal">
-            HomeMed OS sits beneath every program — coordinating care teams, RPM data, recovery goals, family visibility and clinical escalation across every patient journey.
+          <p className="mt-4 text-slate-705 text-slate-705 text-lg sm:text-xl leading-relaxed font-sans font-normal border-l-2 border-brand-teal/30 pl-4">
+            HomeMed Operating System coordinates medical professionals, care teams, data, and alerts across every program.
           </p>
         </div>
 
@@ -95,11 +116,11 @@ export default function Architecture({ onOpenReferralModal, onScrollTo }: Archit
             <div className="flex flex-wrap sm:flex-nowrap items-center gap-5">
               {/* Highlight OS Block */}
               <div className="bg-[#159d9a] text-[#061324] font-black rounded-2xl px-6 py-3.5 flex items-center gap-2.5 shadow-lg shadow-brand-teal/20 shrink-0">
-                <span className="text-[10px] font-mono font-extrabold tracking-widest bg-black/10 px-1.5 py-0.5 rounded">os</span>
+                <span className="text-[10px] font-mono font-extrabold tracking-widest bg-black/10 px-1.5 py-0.5 rounded uppercase">The Core</span>
                 <span className="font-serif font-black text-xl tracking-tight">HomeMed OS</span>
               </div>
-              <p className="text-white text-sm sm:text-base leading-relaxed font-sans font-medium max-w-xl">
-                The coordination layer connecting care teams, RPM data, escalation protocols and clinical governance across every patient.
+              <p className="text-white text-base leading-relaxed font-sans font-medium max-w-xl">
+                HomeMed Operating System coordinates medical professionals, care teams, data, and alerts across every program.
               </p>
             </div>
           </div>
@@ -140,7 +161,7 @@ export default function Architecture({ onOpenReferralModal, onScrollTo }: Archit
                     <span className={`text-[10px] sm:text-[11px] font-mono tracking-widest font-black uppercase ${
                       prog.name === 'LIVYA' ? 'text-[#159d9a]' : prog.name === 'OPTIMA' ? 'text-[#a17c24]' : 'text-[#818cf8]'
                     }`}>
-                      {prog.name === 'LIVYA' ? 'POST-SURGICAL' : prog.name === 'OPTIMA' ? 'ICU STEP-DOWN' : 'REHABILITATION'}
+                      {prog.badge}
                     </span>
                     
                     {/* Program logo container */}
@@ -150,43 +171,48 @@ export default function Architecture({ onOpenReferralModal, onScrollTo }: Archit
                   </div>
 
                   {/* Program title */}
-                  <h3 className="font-serif font-black text-3xl text-white tracking-tight leading-none mt-1 mb-3">
-                    {prog.name}
+                  <h3 className="font-serif font-black text-2xl text-white tracking-tight leading-snug mt-1 mb-5">
+                    {prog.title}
                   </h3>
 
-                  {/* Program description - White & readable text as requested */}
-                  <p className="text-white text-base sm:text-[16px] leading-relaxed font-sans font-medium mb-6">
-                    {prog.text}
-                  </p>
+                  {/* FOR Section */}
+                  <div className="mb-4">
+                    <span className="text-[10px] uppercase font-mono tracking-widest text-[#a17c24] font-black block mb-1">
+                      For:
+                    </span>
+                    <p className="text-white text-sm sm:text-[14.5px] leading-relaxed font-sans font-semibold">
+                      {prog.for}
+                    </p>
+                  </div>
 
-                  {/* Bullet lists - clean and readable white texts, matching bullets */}
-                  <div className="space-y-3 mb-8">
-                    {(prog.name === 'LIVYA' ? [
-                      'Post-operative recovery planning',
-                      'Wound support and medication adherence',
-                      'Physiotherapy and mobility goals',
-                      'Clinical milestone tracking'
-                    ] : prog.name === 'OPTIMA' ? [
-                      'Advanced nursing and medical supervision',
-                      'Oxygen support and high-dependency care',
-                      'Remote monitoring and vital trend alerts',
-                      'Structured escalation pathways'
-                    ] : [
-                      'Physiotherapy and mobility restoration',
-                      'Stroke, neuro and ortho pathways',
-                      'Strength and balance rebuilding',
-                      'Long-term functional independence'
-                    ]).map((bullet, bIdx) => (
-                      <div key={bIdx} className="flex items-start gap-2.5">
-                        {/* Custom square indicator aligned with design */}
-                        <div className={`mt-2 w-1.5 h-1.5 rounded-sm shrink-0 ${
-                          prog.name === 'LIVYA' ? 'bg-[#159d9a]' : prog.name === 'OPTIMA' ? 'bg-[#a17c24]' : 'bg-[#818cf8]'
-                        }`}></div>
-                        <span className="text-white text-xs sm:text-[13.5px] leading-relaxed font-sans font-medium">
-                          {bullet}
-                        </span>
-                      </div>
-                    ))}
+                  {/* WHAT WE DO Section */}
+                  <div className="mb-5">
+                    <span className="text-[10px] uppercase font-mono tracking-widest text-brand-teal font-black block mb-1">
+                      What we do:
+                    </span>
+                    <p className="text-white/90 text-xs sm:text-sm leading-relaxed font-sans font-medium">
+                      {prog.whatWeDo}
+                    </p>
+                  </div>
+
+                  {/* INCLUDES Section */}
+                  <div className="mb-8">
+                    <span className="text-[10px] uppercase font-mono tracking-widest text-slate-400 font-black block mb-2">
+                      Includes:
+                    </span>
+                    <div className="space-y-2.5">
+                      {prog.includes.map((bullet, bIdx) => (
+                        <div key={bIdx} className="flex items-start gap-2">
+                          {/* Custom square indicator aligned with design */}
+                          <div className={`mt-2 w-1.5 h-1.5 rounded-sm shrink-0 ${
+                            prog.name === 'LIVYA' ? 'bg-[#159d9a]' : prog.name === 'OPTIMA' ? 'bg-[#a17c24]' : 'bg-[#818cf8]'
+                          }`}></div>
+                          <span className="text-white text-xs sm:text-[13px] leading-relaxed font-sans font-normal">
+                            {bullet}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
                   </div>
 
                 </div>
@@ -286,10 +312,11 @@ export default function Architecture({ onOpenReferralModal, onScrollTo }: Archit
                 COORDINATED CIRCLE OF CARE
               </span>
               <h3 className="font-serif text-2xl lg:text-3xl font-extrabold text-[#061324] tracking-tight">
-                No clinical player is isolated.
+                Everyone works together around you.
               </h3>
               <p className="text-slate-600 text-base mt-2 leading-relaxed font-sans font-normal">
-                HomeMed centers the entire clinical, coordination, and familial support loop around the patient’s physical recovering state.
+                No one is isolated. HomeMed connects everyone involved in your recovery. Click on each role
+below to see how they help.
               </p>
             </div>
 

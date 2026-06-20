@@ -126,18 +126,18 @@ export default function Hero({ onOpenReferralModal, onScrollTo }: HeroProps) {
                 <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-brand-teal"></span>
               </span>
               <span className="text-[10px] sm:text-[11px] font-mono font-bold tracking-[0.2em] text-[#edf8fa] uppercase">
-                India's Post-Discharge Clinical Infrastructure
-              </span>
+India’s trusted post discharge &amp; recovery partner              </span>
             </div>
 
             {/* Headline with striking Serif Emphasis */}
             <h1 className="font-serif text-4xl sm:text-5xl lg:text-[56px] text-slate-100 font-extrabold leading-[1.1] tracking-tight max-w-2xl">
-              What happens after <span className="text-brand-teal font-serif font-bold relative tracking-wide">discharge</span> defines patient <span className="text-brand-teal">recovery</span>.
+              Quality of monitored  <span className="text-brand-teal font-serif font-bold relative tracking-wide">post discharge</span> care leads to <span className="text-brand-teal">actual recovery</span>.
             </h1>
 
             {/* Optimized High-Contrast, Generously-Spaced Body Copie */}
             <p className="text-slate-200 text-base sm:text-lg lg:text-[19px] max-w-xl leading-relaxed font-sans font-normal">
-              HomeMed builds the robust clinical software and remote care infrastructure hospitals rely on to prevent avoidable readmissions, standardising physical therapist, nursing, and medical-grade telemetry at home.
+              Comprehensive programs guided and delivered by professionals &amp; backed by technology
+infrastructure. Your loved ones are in safe hands with HomeMed
             </p>
 
             {/* Custom CTA Action Segment */}
@@ -162,23 +162,60 @@ export default function Hero({ onOpenReferralModal, onScrollTo }: HeroProps) {
             {/* Participating Hospital Jurisdictions Hub */}
             <div className="pt-8 border-t border-slate-800/40 w-full select-none">
               <span className="text-[10px] font-mono tracking-widest text-[#a17c24] font-black uppercase block mb-3">
-                ● CLINICAL DISPATCH FOR REFERRAL TEAMS
+                ● Where We Operate:
               </span>
               
               <div className="grid grid-cols-2 sm:flex sm:flex-wrap gap-x-6 gap-y-2.5 text-xs text-slate-400 font-light">
-                {['Mumbai Metro', 'Bengaluru Central', 'Hyderabad District', 'Delhi NCR Capital'].map((city, idx) => (
+                {['Mumbai', 'Bengaluru', 'Hyderabad', 'Delhi NCR'].map((city, idx) => (
                   <div key={idx} className="flex items-center space-x-2 font-mono font-bold text-[11px] text-slate-300">
                     <span className="w-1.5 h-1.5 rounded-full bg-brand-gold opacity-80"></span>
                     <span>{city}</span>
                   </div>
                 ))}
               </div>
+
+              {/* Quick Live Demo Prompt Button */}
+              <button
+                onClick={() => {
+                  const element = document.getElementById('clinical-deck');
+                  if (element) {
+                    element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                  }
+                }}
+                className="mt-6 w-full p-4 sm:p-5 bg-[#081b31]/80 hover:bg-[#0a233f] active:scale-[0.99] border-2 border-brand-teal/30 hover:border-brand-teal/80 rounded-2xl text-left transition-all duration-300 group cursor-pointer flex flex-col sm:flex-row sm:items-center justify-between gap-4 shadow-[0_4px_20px_rgba(0,0,0,0.4)] hover:shadow-[0_0_25px_rgba(21,157,154,0.15)]"
+              >
+                <div className="flex items-start space-x-3.5">
+                  <div className="w-10 h-10 rounded-xl bg-brand-teal/15 flex items-center justify-center shrink-0 border border-brand-teal/30 group-hover:bg-brand-teal/25 transition-all">
+                    <Activity className="w-5.5 h-5.5 text-brand-teal animate-pulse" />
+                  </div>
+                  <div>
+                    <div className="flex items-center gap-2">
+                      <span className="text-xs font-mono font-black tracking-widest text-brand-gold uppercase">
+                        Quick Live Demo
+                      </span>
+                      <span className="flex h-2 w-2 relative">
+                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                        <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                      </span>
+                    </div>
+                    <p className="text-[12.5px] sm:text-xs text-slate-250 text-slate-300 font-sans mt-1 leading-snug group-hover:text-white transition-colors">
+                      Check out our Live Monitor, Program Specs, and Real-Time Results.
+                    </p>
+                  </div>
+                </div>
+                
+                {/* Embedded Pill CTA - Makes clickability extremely explicit */}
+                <div className="self-end sm:self-center shrink-0 px-4 py-2 bg-brand-teal group-hover:bg-[#1cc2bf] text-[#061324] font-mono font-extrabold text-[10px] tracking-wider uppercase rounded-xl flex items-center space-x-1.5 transition-all duration-300 shadow-[0_4px_12px_rgba(21,157,154,0.3)] group-hover:translate-x-0.5">
+                  <span>Interactive Deck</span>
+                  <ArrowRight className="w-3.5 h-3.5 stroke-[2.5]" />
+                </div>
+              </button>
             </div>
 
           </div>
 
           {/* RIGHT COLUMN: THE INTERACTIVE CLINICAL COMMAND DECK */}
-          <div className="lg:col-span-6 w-full z-10">
+          <div id="clinical-deck" className="lg:col-span-6 w-full z-10">
             <div className="bg-[#05101d]/60 backdrop-blur-xl border border-white/5 rounded-3xl p-5 sm:p-7 shadow-[0_30px_70px_rgba(0,0,0,0.7)] relative overflow-hidden transition-all duration-300">
               
               {/* Glass subtle flare overlay */}

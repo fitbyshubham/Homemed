@@ -25,14 +25,16 @@ export default function HomeMedOS() {
           <div className="inline-flex items-center space-x-2 bg-[#061324]/5 border border-[#061324]/10 rounded-full px-3.5 py-1.5 mb-2.5">
             <span className="w-1.5 h-1.5 rounded-full bg-brand-gold"></span>
             <span className="text-[10px] sm:text-xs font-mono font-bold tracking-widest text-slate-650 uppercase">
-              HOMEMED OS CORE
+              HOMEMED OS CORE ENGINE
             </span>
           </div>
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#061324] leading-tight tracking-tight">
-            The platform running beneath every program.
+            The smart platform running <span className="text-brand-teal italic font-extrabold">every care program.</span>
           </h2>
           <p className="mt-4 text-slate-705 text-slate-700 text-lg sm:text-xl leading-relaxed font-sans font-normal">
-            Not a nursing agency app or a simple family update diary. HomeMed OS is a robust clinical environment that enforces protocol standardization across the entire recovery lifecycle.
+            HomeMed Operating System is a complete clinical system that standardizes and monitors
+recovery—from medication reminders to emergency alerts. It brings together well coordinated
+manpower and necessary infrastructure needed to achive comprehensive recovery.
           </p>
         </div>
 

@@ -5,92 +5,92 @@ export const careRoles: CareRole[] = [
     id: 'n1',
     title: 'Primary Doctor',
     description: 'Direct clinical governance.',
-    details: 'Receives key alerts and progress summaries, maintaining final authority over recovery milestones without day-to-day administrative burdens.'
+    details: 'Gets critical alerts and summary reports to make final decisions.'
   },
   {
     id: 'n2',
     title: 'RPM Devices',
     description: 'Continuous vitals feed.',
-    details: 'Connected devices stream SpO2, heart rate, blood pressure, and temperature directly into HomeMed OS to build a secure clinical signal.'
+    details: 'Smart gadgets send vitals (heart rate, SpO2) directly to the system.'
   },
   {
     id: 'n3',
-    title: 'Family Visibility',
+    title: 'Family',
     description: 'Reassurance and updates.',
-    details: 'Eliminates anxiety through daily visit summaries, milestone track records, and automated touchpoints detailing real progress.'
+    details: 'Gets daily updates to ease anxiety and stay informed.'
   },
   {
     id: 'n4',
     title: 'Physiotherapist',
     description: 'Mobility and strength recovery.',
-    details: 'Coordinates and tracks daily physical recovery, inputting actual session completion metrics directly into the goals engine.'
+    details: 'appointments and tracking/monitoring daily physical recovery progress.'
   },
   {
     id: 'n5',
     title: 'Nurse',
     description: 'Direct clinical support.',
-    details: 'Executes hands-on wound care, medication management, and daily clinical checks, guided by predefined clinical protocols.'
+    details: 'Provides hands-on wound care and checks vitals, attending to patient needs when needed - all this and more on a single dashboard visible to all stakeholders involved in the recovery journey'
   },
   {
     id: 'n6',
     title: 'Care Coordinator',
     description: 'Central journey alignment.',
-    details: 'Manages scheduling, device calibration, equipment delivery, and synchronizes care teams into a unified rhythm.'
+    details: 'Handles scheduling, device setup, and team sync.'
   },
   {
     id: 'n7',
     title: 'Medical Supervisor',
     description: 'Continuous plan oversight.',
-    details: 'Monitors the patient’s clinical trajectory daily, advising nurses and ensuring adherence to surgical team directives.'
+    details: 'Reviews the patient&#39;s daily progress and guides nurses.'
   },
   {
     id: 'n8',
     title: 'Emergency Escalation',
     description: '24/7 reactive safety net.',
-    details: 'Instantly triages anomaly detections from connected RPM devices to prevent avoidable hospital readmissions.'
+    details: 'Immediately triggers help if RPM devices detect a problem.'
   }
 ];
 
 export const platformPillars = [
   {
     num: '01',
-    title: 'Recovery Goals Engine',
-    desc: 'Personalised, measurable milestones set at program enrolment and tracked daily against live recovery protocols.'
+    title: 'Recovery Goals',
+    desc: 'Daily, personal milestones (e.g., &quot;walk 5 minutes today&quot;).'
   },
   {
     num: '02',
     title: 'Clinical Protocols',
-    desc: 'Structured, evidence-based care plans that replace ad-hoc home visits with a standardized, outcomes-driven pathway.'
+    desc: 'Doctor-approved care plans that replace random home visits.'
   },
   {
     num: '03',
     title: 'Care Coordination',
-    desc: 'Bridges distance between surgeons, nurses, physiotherapists, and families by aligning everyone to a unified recovery plan.'
+    desc: 'Connects your doctor nurse, physiotherapist, Nutritionist, councellor and family on a single platform'
   },
   {
     num: '04',
     title: 'Escalation Engine',
-    desc: 'Observation-to-action alerts with severity triage guidelines, ensuring rapid medical intervention before conditions worsen.'
+    desc: 'Alerts medical teams immediately in case of any emergency.'
   },
   {
     num: '05',
     title: 'RPM Integration',
-    desc: 'Vitals captured by connected in-home sensors stream directly into HMOS to trigger alerts and detect subtle clinical trends.'
+    desc: 'Smart sensors (SpO2, heart rate) stream data directly to your doctors.'
   },
   {
     num: '06',
     title: 'Doctor Dashboard',
-    desc: 'Remote governance hub for referring doctors to review patient compliance, milestones, and vital signs with zero friction.'
+    desc: 'A simple remote view for doctors to check your progress.'
   },
   {
     num: '07',
     title: 'Family Visibility',
-    desc: 'Direct access to milestone updates and coordinator notes, giving families constant peace of mind throughout the journey.'
+    desc: 'Daily updates so your loved ones stay worry-free.'
   },
   {
     num: '08',
     title: 'Recovery Analytics',
-    desc: 'Aggregates outcomes, medication adherence, pain indexes, and mobility ratings to measure real recovery performance.'
+    desc: 'Tracks real progress like medication adherence and mobility among other needs of a recovering patient.'
   }
 ];
 

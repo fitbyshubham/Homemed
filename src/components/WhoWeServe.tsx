@@ -12,8 +12,8 @@ export default function WhoWeServe({ onOpenReferralModal, onScrollTo }: WhoWeSer
       badgeColor: 'text-[#0c706d] bg-[#e6f4f1] border-emerald-500/15',
       bulletColor: 'bg-[#0c706d]',
       title: 'Patients',
-      text: 'Secure programmatic home care after major cardiovascular or neurological surgeries.',
-      starText: 'Receive daily supervisor validation support and personal bedside caregivers.',
+      text: '',
+      starText: 'Get daily supervisor support and bedside caregivers.',
       btnText: 'Explore Programs',
       image: '/assets/patients.jpg',
       action: () => onScrollTo?.('architecture')
@@ -23,8 +23,8 @@ export default function WhoWeServe({ onOpenReferralModal, onScrollTo }: WhoWeSer
       badgeColor: 'text-[#a17c24] bg-[#fef9ec] border-amber-500/15',
       bulletColor: 'bg-[#a17c24]',
       title: 'Families',
-      text: 'Anxiety-free recovery sync. Receive continuous vitals access and secure clinical reports.',
-      starText: 'Direct connection with care coordinators eliminates domestic administrative stress.',
+      text: '',
+      starText: 'Enjoy peace of mind with direct access to coordinators and vitals updates.',
       btnText: 'Speak To Our Team',
       image: '/assets/families.jpg',
       action: () => onScrollTo?.('contact')
@@ -34,8 +34,8 @@ export default function WhoWeServe({ onOpenReferralModal, onScrollTo }: WhoWeSer
       badgeColor: 'text-indigo-600 bg-indigo-50 border-indigo-500/15',
       bulletColor: 'bg-indigo-600',
       title: 'Doctors',
-      text: 'Maintain complete out-patient visibility. Receive weekly clinical summary PDF briefs.',
-      starText: 'Parametric safety limits notify treating specialists of indicators before trauma triggers.',
+      text: '',
+      starText: 'Keep full visibility of out-patients with weekly summary briefs.',
       btnText: 'Refer A Patient',
       image: '/assets/doctors.jpg',
       action: () => onOpenReferralModal?.()
@@ -45,8 +45,8 @@ export default function WhoWeServe({ onOpenReferralModal, onScrollTo }: WhoWeSer
       badgeColor: 'text-blue-600 bg-blue-50 border-blue-500/15',
       bulletColor: 'bg-blue-600',
       title: 'Hospitals',
-      text: 'Reduce 30-day readmission penalties and accelerate active bed turnarounds.',
-      starText: 'Establish a medical-grade step-down layer to protect hospital institutional resources.',
+      text: '',
+      starText: 'Reduce readmission rates and free up beds.',
       btnText: 'Partner With HomeMed',
       image: '/assets/hospitals.jpg',
       action: () => onScrollTo?.('contact')
@@ -62,15 +62,15 @@ export default function WhoWeServe({ onOpenReferralModal, onScrollTo }: WhoWeSer
           <div className="inline-flex items-center space-x-2 bg-[#061324]/5 border border-[#061324]/10 rounded-full px-3.5 py-1.5 mb-2.5">
             <span className="w-1.5 h-1.5 rounded-full bg-brand-teal"></span>
             <span className="text-[10px] sm:text-xs font-mono font-bold tracking-widest text-[#061324] uppercase">
-              WHO HOMEMED SERVES
+              WHO We Serve
             </span>
           </div>
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#061324] leading-tight tracking-tight">
             Designed for seamless support. <br />
-            <span className="text-brand-teal">Built for patients who recover.</span>
+            <span className="text-brand-teal">Built for patients who recover at home.</span>
           </h2>
           <p className="mt-4 text-slate-700 text-lg sm:text-xl leading-relaxed font-sans font-normal">
-            We provide families and physicians with continuous, remote clinical support, delivering absolute peace of mind through constant supervision at home.
+            We support everyone involved in recovery.
           </p>
         </div>
 

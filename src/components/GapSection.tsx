@@ -86,7 +86,8 @@ export default function GapSection() {
               </div>
               <h4 className="font-serif font-bold text-slate-900 text-base tracking-tight">Readmission Reality</h4>
               <p className="text-sm text-slate-600 leading-relaxed font-sans font-light">
-                <span className="font-semibold text-slate-900">Surgical patients</span> are readmitted within 30 days in India — the majority for preventable complications that develop silently at home.
+                <span className="font-semibold text-slate-900">Surgical patients</span> in India are readmitted within 30 days. Most of these issues start quietly at
+home.
               </p>
             </div>
 
@@ -97,7 +98,7 @@ export default function GapSection() {
               </div>
               <h4 className="font-serif font-bold text-slate-900 text-base tracking-tight">The Critical Window</h4>
               <p className="text-sm text-slate-600 leading-relaxed font-sans font-light">
-                Most post-discharge deterioration begins within three days of leaving hospital — when clinical oversight is at its absolute lowest.
+                The first 72 hours are the most critical. That&#39;s when clinical oversight matters the most
               </p>
             </div>
 
@@ -106,7 +107,7 @@ export default function GapSection() {
           {/* Center Column: The 4 Structural Failure Cards */}
           <div className="lg:col-span-4 flex flex-col space-y-5">
             <h3 className="text-xs font-mono font-bold tracking-widest text-[#061324] uppercase mb-1">
-              STRUCTURAL ROOT CAUSES
+              Why Does This Happen?
             </h3>
             
             {/* Fail-Card 1 */}

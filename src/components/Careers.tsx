@@ -98,12 +98,16 @@ export default function Careers({ onBackToHome }: CareersProps) {
           </div>
 
           <h1 className="font-serif text-4xl sm:text-5xl font-extrabold text-[#061324] tracking-tight leading-none font-bold">
-            Join the team behind <br />
-            <span className="text-brand-teal italic font-normal">the Patient Recovery OS.</span>
+            Join the team behind the Patient Recovery OS.
           </h1>
-          <p className="max-w-2xl text-slate-705 text-slate-700 text-base sm:text-lg leading-relaxed font-sans font-normal">
-            At HomeMed, we are building India’s first decentralized clinical infrastructure to transform post-discharge telemetry and remote medical governance. If you believe clinical supervision shouldn't terminate at the hospital exit gate, welcome home.
-          </p>
+          <div className="space-y-2">
+            <span className="text-xs uppercase font-mono tracking-widest text-[#a17c24] font-black block">
+              Who we are:
+            </span>
+            <p className="max-w-2xl text-slate-705 text-slate-700 text-base sm:text-lg leading-relaxed font-sans font-normal border-l-2 border-brand-teal/30 pl-4">
+              HomeMed is building India’s first true recovery infrastructure. If you believe clinical care shouldn't stop at the hospital door, welcome home.
+            </p>
+          </div>
         </div>
 
         {/* Outer Grid: Apply Form & Direct Contact Info */}
@@ -123,7 +127,7 @@ export default function Careers({ onBackToHome }: CareersProps) {
                     Direct Talent Registration
                   </h2>
                   <p className="text-[10px] text-brand-teal font-mono tracking-widest font-semibold flex items-center gap-1 mt-0.5 uppercase">
-                    Secure Candidate Pipeline Gateway
+                    Apply now via our secure candidate gateway.
                   </p>
                 </div>
               </div>
@@ -215,11 +219,11 @@ export default function Careers({ onBackToHome }: CareersProps) {
                         onChange={(e) => setDesiredRole(e.target.value)}
                         className="w-full bg-slate-50/70 text-slate-850 text-xs rounded-xl px-4 py-3 border border-slate-200 focus:bg-white focus:border-brand-teal focus:ring-1 focus:ring-brand-teal/20 focus:outline-none transition-all duration-200"
                       >
-                        <option value="Software Engineer">Full-Stack Software Engineer (React / Node)</option>
-                        <option value="RPM Clinical Nurse">Remote Nurse Coordinator (Physiological Telemetry)</option>
-                        <option value="Hospital Operations">Hospital Integration & Scaling Specialist</option>
-                        <option value="Clinical Lead">Clinical Governance & Nursing Supervisor</option>
-                        <option value="Other Technology">Biomedical Hardware Technician / Support</option>
+                        <option value="Software Engineer">Full-Stack Software Engineers (React / Node)</option>
+                        <option value="RPM Clinical Nurse">Remote Nurse Coordinators (Physiological Telemetry)</option>
+                        <option value="Hospital Operations">Hospital Integration Specialists</option>
+                        <option value="Clinical Lead">Clinical Leads (Nursing Supervisors)</option>
+                        <option value="Other Technology">Biomedical Hardware Support</option>
                       </select>
                     </div>
                   </div>
@@ -287,7 +291,7 @@ export default function Careers({ onBackToHome }: CareersProps) {
                       ) : (
                         <>
                           <Send className="w-3.5 h-3.5" />
-                          <span>Submit Application to Registry</span>
+                          <span>Submit Application</span>
                         </>
                       )}
                     </button>
@@ -348,19 +352,36 @@ export default function Careers({ onBackToHome }: CareersProps) {
               </div>
             </div>
 
-            {/* Ethos Box */}
-            <div className="bg-[#f0ede6] border border-slate-200/80 rounded-3xl p-6 text-left space-y-3.5">
-              <h4 className="font-serif text-sm font-bold text-slate-900">The Decentralized Care Manifesto</h4>
-              <ul className="space-y-3 text-xs text-slate-600 leading-relaxed font-light">
-                <li className="flex items-start gap-2">
-                  <span className="text-brand-teal text-xs font-bold leading-none mt-0.5">•</span>
-                  <span><strong>Scale-First Culture</strong>: We measure our success solely based on readmission mitigation SLAs and daily active physiological supervision minutes.</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-brand-teal text-xs font-bold leading-none mt-0.5">•</span>
-                  <span><strong>Remote Empowerment</strong>: Our Remote Nurses hold complete clinical agency to coordinate step-down safety paths back to head surgeons.</span>
-                </li>
-              </ul>
+            {/* We Are Hiring & Our Mission Sections */}
+            <div className="bg-[#f0ede6] border border-slate-200/80 rounded-3xl p-6 text-left space-y-5">
+              <div>
+                <h4 className="font-serif text-sm font-black text-[#061324] uppercase tracking-wide mb-2.5">
+                  We are hiring:
+                </h4>
+                <ul className="space-y-2 text-xs text-slate-705 leading-relaxed font-semibold">
+                  {[
+                    'Full-Stack Software Engineers (React / Node)',
+                    'Remote Nurse Coordinators (Physiological Telemetry)',
+                    'Hospital Integration Specialists',
+                    'Clinical Leads (Nursing Supervisors)',
+                    'Biomedical Hardware Support'
+                  ].map((role, idx) => (
+                    <li key={idx} className="flex items-start gap-2">
+                      <span className="text-brand-teal text-xs font-bold leading-none mt-0.5">•</span>
+                      <span>{role}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="border-t border-slate-200 pt-4">
+                <h4 className="font-serif text-sm font-black text-[#061324] uppercase tracking-wide mb-2.5">
+                  Our Mission:
+                </h4>
+                <p className="text-xs text-slate-700 leading-relaxed font-medium">
+                  We measure success by how many readmissions we prevent and how many active recovery hours we supervise.
+                </p>
+              </div>
             </div>
 
           </div>
@@ -370,7 +391,7 @@ export default function Careers({ onBackToHome }: CareersProps) {
         {/* Closing Footnote */}
         <div className="mt-20 border-t border-slate-200 pt-8 text-center text-xs text-slate-400 font-mono">
           <p>© {new Date().getFullYear()} HomeMed Operating System (HMOS). All rights reserved.</p>
-          <p className="mt-1">ISO 27001 Security Standard Compliant Distributed Care.</p>
+          <p className="mt-1">HomeMed OS is ISO 27001 compliant, ensuring your medical data is secure and protected.</p>
         </div>
       </div>
     </div>
